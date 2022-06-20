@@ -1,0 +1,15 @@
+:root {
+    --color-red: #C53359;
+    --color-blue:#1D213F;
+    --color-black: #0C101E;
+    --color-green: #68B552;
+    --color-blue-light: #3D447B;
+    --color-blue-border: #0F1221;
+    --color-white: #FFFFFF;
+}
+
+body {
+    background: url(../img/bg.png) no-repeat bottom right fixed;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
