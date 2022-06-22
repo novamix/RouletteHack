@@ -1,0 +1,150 @@
+.table {
+    display: flex;
+    justify-content: center;
+} 
+.board-main {
+    justify-content: center;
+}
+.board {
+    width: 1200px;
+    /* background-color: antiquewhite; */
+   
+    font-size: 1.2rem;
+    display:flex;
+    margin-top: 80px
+}
+
+.board-0 {
+    background-color: var(--color-green);
+    width: 120px;
+   
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.board-sup {
+    display: flex;
+}
+
+.board-mid {
+    display: flex;
+    height: 5px;
+}
+
+
+.number-board {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: -13px;
+    box-shadow: inset 0 0 10px 0 var(--color-black)
+}
+
+.number-board-2to1{
+    width: 74px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: -13px;
+    box-shadow: inset 0 0 10px 0 var(--color-black)
+}
+
+
+
+.no-number {
+    width: 80px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: -13px;
+    
+    height: 30px;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+.no-number:hover {
+    background-color: aqua;
+}
+
+.no-number:first-child{
+    margin-left: 4px !important;
+}
+.number-2 {
+    width: 36px;
+    margin-left: -18px;
+    z-index:1;
+   
+}
+
+.number-2:hover {
+    background-color: pink;
+}
+
+.number-4 {
+    width: 36px;
+    margin-left: -18px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+    z-index:2;
+    
+}
+
+.number-4:hover {
+    background-color: pink;
+}
+
+.number-blue{
+    background-color: var(--color-blue);
+}
+
+.number-red {
+    background-color: var(--color-red);
+}
+
+.number-blank {
+    margin-left: 8px;
+    border: 3px solid  var(--color-blue);
+}
+
+.number-board:first-child{
+    margin-left: 4px !important;
+}
+
+.board-low{
+    display: block;
+}
+
+.board-three{
+    display:flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 10px 90px 10px 100px;
+}
+
+.board-three > div {
+    border: 3px solid var(--color-blue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.board-three-red {
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red) !important;
+}
+.board-three-blue {
+    background-color: var(--color-blue);
+}

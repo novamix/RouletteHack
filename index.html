@@ -4,9 +4,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="sytlesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link
+            rel="sytlesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/roulette.css" />
+        <link rel="stylesheet" href="css/board.css" />
         <title>Roulette Hack</title>
     </head>
     <body>
@@ -19,9 +23,7 @@
         </div>
         <div class="main">
             <div class="plate plateRotate" id="plate">
-                <div class="ball" id="ball" data-spin='37'>
-
-                </div>
+                <div class="ball" id="ball" data-spin="37"></div>
                 <ul class="numbers">
                     <li class="number">
                         <label
@@ -285,12 +287,163 @@
                 </ul>
             </div>
         </div>
-        <div>Panel</div>
+        <div class="table"> 
+            <div class="board-main">
+                <div class="board">
+                    <div class="board-0">0</div>
+                    <div class="board-numbers">
+                        <div class="board-sup">
+                            <div class="number-board number-red number-first">3</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">6</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">9</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">12</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">15</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">18</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">21</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">24</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">27</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">30</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">33</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">36</div>
+                            <div class="number-board-2to1 number-blank">2:1</div>
+                        </div>
+                        <div class="board-mid">
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                        </div>
+                        <div class="board-sup">
+                            <div class="number-board number-blue number-first">2</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">5</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">8</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">11</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">14</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">17</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">20</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">23</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">26</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">29</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">32</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">35</div>
+                            <div class="number-board-2to1 number-blank">2:1</div>
+                        </div>
+                        <div class="board-mid">
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                            <div class="number-4"></div>
+                            <div class="no-number"></div>
+                        </div>
+                        <div class="board-sup">
+                            <div class="number-board number-red number-first">1</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">4</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">7</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">10</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">13</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">16</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">19</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">22</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">25</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">28</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-blue">31</div>
+                            <div class="number-2"></div>
+                            <div class="number-board number-red">34</div>
+                            <div class="number-board-2to1 number-blank">2:1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="board-low">
+                    <div class="board-three">
+                        <div>1 to 12</div>
+                        <div>13 to 24</div>
+                        <div>25 to 36</div>
+                    </div>
+                    <div class="board-three">
+                        <div>1 to 18</div>
+                        <div>Even</div>
+                        <div class="board-three-red"></div>
+                        <div class="board-three-blue"></div>
+                        <div>Odd</div>
+                        <div>19 to 36</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div>Monedas</div>
         <div>
             <button class="btn-start" id="btnStart">Start Game</button>
         </div>
-
 
         <script src="https://hammerjs.github.io/dist/hammer.min.js" defer></script>
         <script src="js/game.js" defer></script>
