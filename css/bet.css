@@ -1,0 +1,35 @@
+.bet {
+    position: absolute;
+    width: 50px;
+    
+}
+.bet:nth-child(1n){
+    margin-top: 0px
+}
+.bet:nth-child(2n){
+    margin-top: -7px;
+}
+.bet:nth-child(3n){
+    margin-top:-14px
+}
+.bet:nth-child(4n){
+    margin-top:-21px
+}
+.bet:nth-child(5n){
+    margin-top:-28px
+}
+.bet:nth-child(6n){
+    margin-top:-35px
+}
+.bet:nth-child(7n){
+    margin-top:-42px
+}
+.bet:nth-child(8n){
+    margin-top:-49px
+}
+.bet:nth-child(9n){
+    margin-top:-56px
+}
+.bet:nth-child(10n){
+    margin-top:-63px
+}

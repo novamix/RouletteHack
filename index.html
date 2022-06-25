@@ -11,15 +11,15 @@
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/roulette.css" />
         <link rel="stylesheet" href="css/board.css" />
+        <link rel="stylesheet" href="css/numbers.css" />
+        <link rel="stylesheet" href="css/coins.css" />
+        <link rel="stylesheet" href="css/bet.css" />
         <title>Roulette Hack</title>
     </head>
     <body>
-        <div class="last-balls">
-            <div class="last-ball">
-                <div class="ball-number">
-                    <p>1</p>
-                </div>
-            </div>
+        <div><p>Dinero Total: <span class="money">5000€</span>€ -  Cantidad Apostada: <span class="staked">0</span>€</p></div>
+        <div class="last-numbers">
+          
         </div>
         <div class="main">
             <div class="plate plateRotate" id="plate">
@@ -290,162 +290,181 @@
         <div class="table"> 
             <div class="board-main">
                 <div class="board">
-                    <div class="board-0">0</div>
+                    <div class="board-0" data-number="0">0</div>
                     <div class="board-numbers">
                         <div class="board-sup">
-                            <div class="number-board number-red number-first">3</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">6</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">9</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">12</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">15</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">18</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">21</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">24</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">27</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">30</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">33</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">36</div>
-                            <div class="number-board-2to1 number-blank">2:1</div>
+                            <div class="number-board number-red" data-number="3">3
+                                
+                            </div>
+                            <div class="number-2" data-number="3,6"></div>
+                            <div class="number-board number-blue" data-number="6">6</div>
+                            <div class="number-2" data-number="6,9"></div>
+                            <div class="number-board number-red" data-number="9">9</div>
+                            <div class="number-2" data-number="9,12"></div>
+                            <div class="number-board number-red" data-number="12">12</div>
+                            <div class="number-2" data-number="12,15"></div>
+                            <div class="number-board number-blue" data-number="15">15</div>
+                            <div class="number-2" data-number="15,18"></div>
+                            <div class="number-board number-red" data-number="18">18</div>
+                            <div class="number-2" data-number="18,21"></div>
+                            <div class="number-board number-red" data-number="21">21</div>
+                            <div class="number-2" data-number="21,24"></div>
+                            <div class="number-board number-blue" data-number="24">24</div>
+                            <div class="number-2" data-number="24,27"></div>
+                            <div class="number-board number-red" data-number="27">27</div>
+                            <div class="number-2" data-number="27,30"></div>
+                            <div class="number-board number-red" data-number="30">30</div>
+                            <div class="number-2" data-number="30,33"></div>
+                            <div class="number-board number-blue" data-number="33">33</div>
+                            <div class="number-2" data-number="33,36"></div>
+                            <div class="number-board number-red" data-number="36">36</div>
+                            <div class="number-board-2to1 number-blank" data-number="2to1-1">2:1</div>
                         </div>
                         <div class="board-mid">
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
+                            <div data-number="3,2" class="no-number"></div>
+                            <div data-number="3,6,2,5" class="number-4"></div>
+                            <div data-number="6,5" class="no-number"></div>
+                            <div data-number="6,9,5,8" class="number-4"></div>
+                            <div data-number="9,8" class="no-number"></div>
+                            <div data-number="9,12,8,11" class="number-4"></div>
+                            <div data-number="12,11" class="no-number"></div>
+                            <div data-number="12,15,14,11" class="number-4"></div>
+                            <div data-number="15,14" class="no-number"></div>
+                            <div data-number="15,18,17,14" class="number-4"></div>
+                            <div data-number="18,17" class="no-number"></div>
+                            <div data-number="18,21,20,17" class="number-4"></div>
+                            <div data-number="21,20" class="no-number"></div>
+                            <div data-number="21,24,23,20" class="number-4"></div>
+                            <div data-number="24,23" class="no-number"></div>
+                            <div data-number="24,27,26,23" class="number-4"></div>
+                            <div data-number="27,26" class="no-number"></div>
+                            <div data-number="27,30,29,26" class="number-4"></div>
+                            <div data-number="30,29" class="no-number"></div>
+                            <div data-number="30,33,32,29" class="number-4"></div>
+                            <div data-number="33,32" class="no-number"></div>
+                            <div data-number="33,36,35,32" class="number-4"></div>
+                            <div data-number="36,35" class="no-number"></div>
                         </div>
                         <div class="board-sup">
-                            <div class="number-board number-blue number-first">2</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">5</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">8</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">11</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">14</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">17</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">20</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">23</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">26</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">29</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">32</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">35</div>
-                            <div class="number-board-2to1 number-blank">2:1</div>
+                            <div data-number="2" class="number-board number-blue" >2</div>
+                            <div data-number="2,5" class="number-2"></div>
+                            <div data-number="5" class="number-board number-red">5</div>
+                            <div data-number="5,8" class="number-2"></div>
+                            <div data-number="8" class="number-board number-blue" >8</div>
+                            <div data-number="8,11" class="number-2"></div>
+                            <div data-number="11" class="number-board number-blue">11</div>
+                            <div data-number="11,14" class="number-2"></div>
+                            <div data-number="14" class="number-board number-red" >14</div>
+                            <div data-number="14,17" class="number-2"></div>
+                            <div data-number="17" class="number-board number-blue" >17</div>
+                            <div data-number="17,20" class="number-2"></div>
+                            <div data-number="20" class="number-board number-blue">20</div>
+                            <div data-number="20,23" class="number-2"></div>
+                            <div data-number="23" class="number-board number-red" >23</div>
+                            <div data-number="23,26" class="number-2"></div>
+                            <div data-number="26" class="number-board number-blue" >26</div>
+                            <div data-number="26,29" class="number-2"></div>
+                            <div data-number="29" class="number-board number-blue" >29</div>
+                            <div data-number="29,32" class="number-2"></div>
+                            <div data-number="32" class="number-board number-red">32</div>
+                            <div data-number="32,35" class="number-2"></div>
+                            <div data-number="35" class="number-board number-blue" >35</div>
+                            <div data-number="2to1-2" class="number-board-2to1 number-blank" >2:1</div>
                         </div>
                         <div class="board-mid">
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
-                            <div class="number-4"></div>
-                            <div class="no-number"></div>
+                            <div data-number="2,1" class="no-number"></div>
+                            <div data-number="2,5,4,1" class="number-4"></div>
+                            <div data-number="5,4" class="no-number"></div>
+                            <div data-number="5,8,7,4" class="number-4"></div>
+                            <div data-number="8,7" class="no-number"></div>
+                            <div data-number="8,11,10,7" class="number-4"></div>
+                            <div data-number="11,10" class="no-number"></div>
+                            <div data-number="11,14,13,10" class="number-4"></div>
+                            <div data-number="14,13" class="no-number"></div>
+                            <div data-number="14,17,16,13" class="number-4"></div>
+                            <div data-number="17,16" class="no-number"></div>
+                            <div data-number="17,20,19,16" class="number-4"></div>
+                            <div data-number="20,19" class="no-number"></div>
+                            <div data-number="20,23,22,19" class="number-4"></div>
+                            <div data-number="23,22" class="no-number"></div>
+                            <div data-number="23,26,25,22" class="number-4"></div>
+                            <div data-number="26,25" class="no-number"></div>
+                            <div data-number="26,29,28,25" class="number-4"></div>
+                            <div data-number="29,28" class="no-number"></div>
+                            <div data-number="29,32,31,28" class="number-4"></div>
+                            <div data-number="32,31" class="no-number"></div>
+                            <div data-number="32,35,34,31" class="number-4"></div>
+                            <div data-number="35,34" class="no-number"></div>
                         </div>
                         <div class="board-sup">
-                            <div class="number-board number-red number-first">1</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">4</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">7</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">10</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">13</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">16</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">19</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">22</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">25</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">28</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-blue">31</div>
-                            <div class="number-2"></div>
-                            <div class="number-board number-red">34</div>
-                            <div class="number-board-2to1 number-blank">2:1</div>
+                            <div data-number="1" class="number-board number-red" >1</div>
+                            <div data-number="1,4" class="number-2" ></div>
+                            <div data-number="4" class="number-board number-blue" >4</div>
+                            <div data-number="4,7" class="number-2" ></div>
+                            <div data-number="7" class="number-board number-red" >7</div>
+                            <div data-number="7,10" class="number-2" ></div>
+                            <div data-number="10" class="number-board number-blue" >10</div>
+                            <div data-number="10,13" class="number-2" ></div>
+                            <div data-number="13" class="number-board number-blue">13</div>
+                            <div data-number="13,16" class="number-2" ></div>
+                            <div data-number="16" class="number-board number-red" >16</div>
+                            <div data-number="16,19" class="number-2" ></div>
+                            <div data-number="19" class="number-board number-red" >19</div>
+                            <div data-number="19,22" class="number-2" ></div>
+                            <div data-number="22"class="number-board number-blue">22</div>
+                            <div data-number="22,25" class="number-2" ></div>
+                            <div data-number="25" class="number-board number-red">25</div>
+                            <div data-number="25,28" class="number-2" ></div>
+                            <div data-number="28" class="number-board number-blue" >28</div>
+                            <div data-number="28,31" class="number-2" ></div>
+                            <div data-number="31" class="number-board number-blue" >31</div>
+                            <div data-number="31,34" class="number-2" ></div>
+                            <div data-number="34" class="number-board number-red" >34</div>
+                            <div data-number="2to1-3" class="number-board-2to1 number-blank">2:1</div>
                         </div>
                     </div>
                 </div>
                 <div class="board-low">
                     <div class="board-three">
-                        <div>1 to 12</div>
-                        <div>13 to 24</div>
-                        <div>25 to 36</div>
+                        <div data-number="1to12">1 to 12</div>
+                        <div data-number="13to24">13 to 24</div>
+                        <div data-number="25to36">25 to 36</div>
                     </div>
                     <div class="board-three">
-                        <div>1 to 18</div>
-                        <div>Even</div>
-                        <div class="board-three-red"></div>
-                        <div class="board-three-blue"></div>
-                        <div>Odd</div>
-                        <div>19 to 36</div>
+                        <div data-number="1to18">1 to 18</div>
+                        <div data-number="even">Even</div>
+                        <div data-number="red" class="board-three-red"></div>
+                        <div data-number="blue" class="board-three-blue"></div>
+                        <div data-number="odd">Odd</div>
+                        <div data-number="19to36">19 to 36</div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div>Monedas</div>
+        <div class="coins">
+            <div data-coin="1" class="coin coin-active">
+              <div data-coin="1" class="coin-1"></div>
+            </div>
+            <div data-coin="5" class="coin">
+                <div class="coin-5"></div>
+            </div>
+            <div data-coin="25" class="coin">
+                <div class="coin-25"> </div>
+            </div>
+            <div data-coin="100" class="coin">
+                <div class="coin-100"></div>
+            </div>
+            <div data-coin="500" class="coin">
+               <div class="coin-500"></div>
+            </div>
+        </div>
         <div>
             <button class="btn-start" id="btnStart">Start Game</button>
         </div>
 
         <script src="https://hammerjs.github.io/dist/hammer.min.js" defer></script>
+        <script src="js/player.js" defer></script>
         <script src="js/game.js" defer></script>
         <script src="js/script.js" defer></script>
     </body>

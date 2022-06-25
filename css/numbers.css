@@ -1,0 +1,35 @@
+.last-numbers{
+        position: fixed; 
+        width: 80px; 
+        top: 30%; 
+        left: 10px; 
+        margin-top: -100px; /* Negative half of height. */
+        background-color: var(--color-black);
+        border-radius:  8px;
+        display: block;
+        padding: 20px 0;
+
+}
+
+.last-ball {
+        
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto
+}
+
+.ball-red {
+        background-color: var(--color-red);
+}
+
+.ball-blue {
+        background-color: var(--color-blue);
+} 
+
+.ball-green {
+        background-color: var(--color-green);
+}
