@@ -1,6 +1,6 @@
 class Player {
     constructor(money) {
-        this.money = 4000; // dinero que tengo
+        this.money = 4001; // dinero que tengo
         this.staked = 0; // cantidad apostada
         this.coin = 1; 
         this.bets = {}; // numeros apostados y cantidad de monedas
@@ -88,13 +88,8 @@ class Player {
                 number.appendChild(newNumber)
             }
             document.querySelector('.staked').textContent = this.staked
-            console.log(this.bets)
         }
     }
-
-    // comprobar si gane
-    checkWin(number) {
-        console.log('gane', number)
-    } 
-
 }
+
+

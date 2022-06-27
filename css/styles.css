@@ -14,4 +14,5 @@ body {
     background-color: var(--color-black);
     color: var(--color-white);
     font-family: 'Roboto', sans-serif;
+    user-select: none;
 }

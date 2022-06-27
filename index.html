@@ -14,10 +14,11 @@
         <link rel="stylesheet" href="css/numbers.css" />
         <link rel="stylesheet" href="css/coins.css" />
         <link rel="stylesheet" href="css/bet.css" />
+        <link rel="stylesheet" href="css/status.css" />
         <title>Roulette Hack</title>
     </head>
     <body>
-        <div><p>Dinero Total: <span class="money">5000€</span>€ -  Cantidad Apostada: <span class="staked">0</span>€</p></div>
+        <div class="status"><p>Saldo: <span class="money">5000€</span>€ -  Apuesta Total: <span class="staked">0</span>€</p></div>
         <div class="last-numbers">
           
         </div>
@@ -434,7 +435,7 @@
                         <div data-number="1to18">1 to 18</div>
                         <div data-number="even">Even</div>
                         <div data-number="red" class="board-three-red"></div>
-                        <div data-number="blue" class="board-three-blue"></div>
+                        <div data-number="black" class="board-three-blue"></div>
                         <div data-number="odd">Odd</div>
                         <div data-number="19to36">19 to 36</div>
                     </div>
@@ -459,10 +460,6 @@
                <div class="coin-500"></div>
             </div>
         </div>
-        <div>
-            <button class="btn-start" id="btnStart">Start Game</button>
-        </div>
-
         <script src="https://hammerjs.github.io/dist/hammer.min.js" defer></script>
         <script src="js/player.js" defer></script>
         <script src="js/game.js" defer></script>
