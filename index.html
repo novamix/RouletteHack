@@ -18,269 +18,282 @@
         <title>Roulette Hack</title>
     </head>
     <body>
-        <div class="status"><p>Saldo: <span class="money">5000€</span>€ -  Apuesta Total: <span class="staked">0</span>€</p></div>
+        <div class="status">
+            <div><p>Saldo: <span class="money">5000€</span>-  Apuesta Total: <span class="staked">0</span></p></div>
+            <div class="placeMin"><h2 class="text-place">Place Your Bets</h2></div>
+        </div>
+        <div class="place">
+            <div>
+                <h2 class="text-place">Place Your Bets</h2>
+            </div>
+        </div>
+        <div class="win win-red">
+            <h2>8</h2>
+            <p>You Win: 23883€</p>
+        </div>
         <div class="last-numbers">
           
         </div>
+        
         <div class="main">
             <div class="plate plateRotate" id="plate">
                 <div class="ball" id="ball" data-spin="37"></div>
                 <ul class="numbers">
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="32" /><span class="hole"
+                            ><input type="radio" name="hole" value="32" /><span  data-hole="32" class="hole"
                                 >32</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="15" checked /><span class="hole"
+                            ><input type="radio" name="hole" value="15" /><span  data-hole="15" class="hole"
                                 >15</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="19" /><span class="hole"
+                            ><input type="radio" name="hole" value="19" /><span  data-hole="19" class="hole"
                                 >19</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="4" /><span class="hole"
+                            ><input type="radio" name="hole" value="4" /><span data-hole="4" class="hole"
                                 >4</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="21" /><span class="hole"
+                            ><input type="radio" name="hole" value="21" /><span  data-hole="21" class="hole"
                                 >21</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="2" /><span class="hole"
+                            ><input type="radio" name="hole" value="2" /><span data-hole="2" class="hole"
                                 >2</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="25" /><span class="hole"
+                            ><input type="radio" name="hole" value="25" /><span  data-hole="25" class="hole"
                                 >25</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="17" /><span class="hole"
+                            ><input type="radio" name="hole" value="17" /><span  data-hole="17" class="hole"
                                 >17</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="34" /><span class="hole"
+                            ><input type="radio" name="hole" value="34" /><span  data-hole="34" class="hole"
                                 >34</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="6" /><span class="hole"
+                            ><input type="radio" name="hole" value="6" /><span data-hole="6" class="hole"
                                 >6</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="27" /><span class="hole"
+                            ><input type="radio" name="hole" value="27" /><span  data-hole="27" class="hole"
                                 >27</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="13" /><span class="hole"
+                            ><input type="radio" name="hole" value="13" /><span  data-hole="13" class="hole"
                                 >13</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="36" /><span class="hole"
+                            ><input type="radio" name="hole" value="36" /><span  data-hole="36" class="hole"
                                 >36</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="11" /><span class="hole"
+                            ><input type="radio" name="hole" value="11" /><span  data-hole="11" class="hole"
                                 >11</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="30" /><span class="hole"
+                            ><input type="radio" name="hole" value="30" /><span  data-hole="30" class="hole"
                                 >30</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="8" /><span class="hole"
+                            ><input type="radio" name="hole" value="8" /><span data-hole="8" class="hole"
                                 >8</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="23" /><span class="hole"
+                            ><input type="radio" name="hole" value="23" /><span  data-hole="23" class="hole"
                                 >23</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="10" /><span class="hole"
+                            ><input type="radio" name="hole" value="10" /><span  data-hole="10" class="hole"
                                 >10</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="5" /><span class="hole"
+                            ><input type="radio" name="hole" value="5" /><span data-hole="5" class="hole"
                                 >5</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="24" /><span class="hole"
+                            ><input type="radio" name="hole" value="24" /><span  data-hole="24" class="hole"
                                 >24</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="16" /><span class="hole"
+                            ><input type="radio" name="hole" value="16" /><span  data-hole="16" class="hole"
                                 >16</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="33" /><span class="hole"
+                            ><input type="radio" name="hole" value="33" /><span  data-hole="33" class="hole"
                                 >33</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="1" /><span class="hole"
+                            ><input type="radio" name="hole" value="1" /><span data-hole="1" class="hole"
                                 >1</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="20" /><span class="hole"
+                            ><input type="radio" name="hole" value="20" /><span  data-hole="20" class="hole"
                                 >20</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="14" /><span class="hole"
+                            ><input type="radio" name="hole" value="14" /><span  data-hole="14" class="hole"
                                 >14</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="31" /><span class="hole"
+                            ><input type="radio" name="hole" value="31" /><span  data-hole="31" class="hole"
                                 >31</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="9" /><span class="hole"
+                            ><input type="radio" name="hole" value="9" /><span data-hole="9" class="hole"
                                 >9</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="22" /><span class="hole"
+                            ><input type="radio" name="hole" value="22" /><span  data-hole="22" class="hole"
                                 >22</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="18" /><span class="hole"
+                            ><input type="radio" name="hole" value="18" /><span  data-hole="18" class="hole"
                                 >18</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="29" /><span class="hole"
+                            ><input type="radio" name="hole" value="29" /><span  data-hole="29" class="hole"
                                 >29</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="7" /><span class="hole"
+                            ><input type="radio" name="hole" value="7" /><span data-hole="7" class="hole"
                                 >7</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="28" /><span class="hole"
+                            ><input type="radio" name="hole" value="28" /><span  data-hole="28" class="hole"
                                 >28</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="12" /><span class="hole"
+                            ><input type="radio" name="hole" value="12" /><span  data-hole="12" class="hole"
                                 >12</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="35" /><span class="hole"
+                            ><input type="radio" name="hole" value="35" /><span  data-hole="35" class="hole"
                                 >35</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="3" /><span class="hole"
+                            ><input type="radio" name="hole" value="3" /><span data-hole="3" class="hole"
                                 >3</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="26" /><span class="hole"
+                            ><input type="radio" name="hole" value="26" /><span  data-hole="26" class="hole"
                                 >26</span
                             ></label
                         >
                     </li>
                     <li class="number">
                         <label
-                            ><input type="radio" name="hole" value="0" /><span class="hole"
+                            ><input type="radio" name="hole" value="0" /><span data-hole="0" class="hole"
                                 >0</span
                             ></label
                         >
@@ -288,8 +301,18 @@
                 </ul>
             </div>
         </div>
+        
         <div class="table"> 
+           
             <div class="board-main">
+                <div class="buttons">
+                    <div class="clearBets">
+                        Clear Bets
+                    </div>
+                    <div class="repeatBets">
+                        Repeat Bets
+                    </div>
+                </div>
                 <div class="board">
                     <div class="board-0" data-number="0">0</div>
                     <div class="board-numbers">

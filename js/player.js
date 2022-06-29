@@ -1,9 +1,10 @@
 class Player {
     constructor(money) {
-        this.money = 4001; // dinero que tengo
+        this.money = localStorage.getItem('money') ? localStorage.getItem('money') : 4000  // dinero que tengo
         this.staked = 0; // cantidad apostada
         this.coin = 1; 
         this.bets = {}; // numeros apostados y cantidad de monedas
+        this.betsAnt = {}
         this.coinsImage = {
             1: '../img/coins/1/flip-v02-512.png',
             5: '../img/coins/5/flip-v02-512.png',
@@ -87,8 +88,17 @@ class Player {
                 newNumber.classList.add('bet-500')
                 number.appendChild(newNumber)
             }
-            document.querySelector('.staked').textContent = this.staked
+            document.querySelector('.staked').textContent = game.formatter.format(this.staked)
         }
+    }
+
+    clearBets(){
+        this.staked = 0 
+        this.bets = {}
+        for (const img of document.querySelectorAll('.bet')) {
+            img.remove()
+        }
+        document.querySelector('.staked').textContent = game.formatter.format(this.staked)
     }
 }
 

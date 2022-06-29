@@ -1,6 +1,7 @@
 .table {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 } 
 .board-main {
     justify-content: center;
@@ -11,7 +12,7 @@
    
     font-size: 1.2rem;
     display:flex;
-    margin-top: 80px
+    margin-top: 20px
 }
 
 .board-0 {
@@ -72,10 +73,6 @@
     margin-top: -10px;
 }
 
-.no-number:hover {
-    background-color: aqua;
-}
-
 .no-number:first-child{
     margin-left: 4px !important;
 }
@@ -86,10 +83,6 @@
    
 }
 
-.number-2:hover {
-    background-color: pink;
-}
-
 .number-4 {
     width: 36px;
     margin-left: -18px;
@@ -97,10 +90,6 @@
     margin-bottom: -20px;
     z-index:2;
     
-}
-
-.number-4:hover {
-    background-color: pink;
 }
 
 .number-blue{
@@ -147,4 +136,39 @@
 }
 .board-three-blue {
     background-color: var(--color-blue);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clearBets {
+    text-align: right;
+    margin-top: 60px;
+    background-color: rgba(107, 107, 107, 0.599);
+    
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.clearBets:hover {
+    background-color: rgba(24, 118, 61, 0.599);
+}
+
+
+.repeatBets {
+    text-align: right;
+    margin-top: 60px;
+    background-color: rgba(98, 24, 24, 0.599);
+    
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-align: center;
+    display:none;
+}
+
+.repeatBets:hover {
+    background-color: rgba(24, 118, 61, 0.599);
 }

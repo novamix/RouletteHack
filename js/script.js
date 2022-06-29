@@ -21,4 +21,12 @@ window.onload = () => {
             game.player.betNumber(number)
         })
     })
+
+    document.querySelector('.clearBets').addEventListener('click', () => {
+        game.player.clearBets()
+    })
+
+    document.querySelector('.repeatBets').addEventListener('click', () => {
+        game.player.repeatBets()
+    })
 }
