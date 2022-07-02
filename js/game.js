@@ -13,65 +13,75 @@ class Game {
         this.statusGame = false
         this.winMoney = 0
         this.formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' })
+        this.gameStart = false
     }
 
     start() {
-        if(this.player.money <= 0 && localStorage.getItem('money') ) {
+        if (this.player.money <= 0 && localStorage.getItem('money')) {
             this.player.money = 1000
         }
         this.moneyText.textContent = this.formatter.format(this.player.money)
         this.win.style.display = 'none'
         this.changeText('Place Your Bets')
-        this.lauch()
+        this.statusGame = false
         this.plate.classList.add('plateRotate')
-        this.intervalId = setInterval(() => {
-            this.statusGame = false
-            for (const img of document.querySelectorAll('.bet')) {
-                img.remove()
-            }
-            this.player.bets = {}
-            this.player.staked = 0
-            this.winMoney = 0
-            document.querySelector('.staked').textContent =this.formatter.format(this.player.staked)
-            this.changeText('Place Your Bets')
+        for (const img of document.querySelectorAll('.bet')) {
+            img.remove()
+        }
+        this.player.bets = {}
+        this.player.staked = 0
+        this.winMoney = 0
+        document.querySelector('.staked').textContent = this.formatter.format(this.player.staked)
+        this.changeText('Place Your Bets')
 
-            setTimeout(() => {
-                this.place.style.display = 'none'
-            }, 1000)
+        setTimeout(() => {
+            this.place.style.display = 'none'
+        }, 1000)
+        ball.setAttribute('data-spin', '37')
+
+        
+        setTimeout(() => {
             this.lauch()
-        }, this.timer)
+        }, 15000)
     }
 
     lauch() {
-        ball.setAttribute('data-spin', '37')
         setTimeout(() => {
+            this.changeText('No More')
+            this.player.betsAnt = this.player.bets
             setTimeout(() => {
-                this.changeText('No More')
-                this.player.betsAnt = this.player.bets
-                setTimeout(() => {
-                    this.place.style.display = 'none'
-                }, 1000)
+                this.place.style.display = 'none'
+            }, 1000)
 
-                this.statusGame = true
-                this.player.money -= this.player.staked
-                localStorage.setItem('money', this.player.money);
-                this.moneyText.textContent = this.formatter.format(this.player.money)
-            }, 3000)
-            //this.numberWin = 0
-            this.numberWin = Math.floor(Math.random() * 37)
+            this.statusGame = true
+            this.player.money -= this.player.staked
+            localStorage.setItem('money', this.player.money)
+            this.moneyText.textContent = this.formatter.format(this.player.money)
+        }, 3000)
+        this.numberWin = Math.floor(Math.random() * 37)
 
-            ball.setAttribute('data-spin', this.numberWin)
-            setTimeout(() => {
-                this.lastBall()
-                this.checkWin(this.numberWin)
-                this.changeText(`You Win: ${this.winMoney}€`, true)
-                this.moneyText.textContent = this.formatter.format(this.player.money)
-                localStorage.setItem('money', this.player.money);
+        const myNode = document.querySelector('[data-hole="' + this.numberWin + '"]')
+        const positionHole = setInterval(() => {
+            if (
+                myNode.getBoundingClientRect().y > -400 && 
+                myNode.getBoundingClientRect().y < 0 && 
+                myNode.getBoundingClientRect().x > window.innerWidth / 2
+            ) {
+                clearInterval(positionHole)
+                ball.setAttribute('data-spin', this.numberWin)
                 setTimeout(() => {
-                    this.place.style.display = 'none'
-                }, 5000)
-            }, 9000)
-        }, 15000)
+                    this.lastBall()
+                    this.checkWin(this.numberWin)
+                    this.changeText(`You Win: ${this.winMoney}€`, true)
+                    this.moneyText.textContent = this.formatter.format(this.player.money)
+                    localStorage.setItem('money', this.player.money)
+                    setTimeout(() => {
+                        this.place.style.display = 'none'
+                        this.start()
+                    }, 4000)
+                }, 7000)
+            }
+        }, 200)
     }
 
     lastBall() {
@@ -220,7 +230,6 @@ class Game {
             setTimeout(() => {
                 this.win.style.display = 'none'
             }, 5000)
-
         } else {
             for (const t of this.placeTexts) {
                 t.textContent = text

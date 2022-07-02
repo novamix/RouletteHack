@@ -135,187 +135,214 @@
 
 .ball[data-spin='1']:before {
     transform: rotateZ(-2602deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    right: 18%;
 }
 .ball[data-spin='2']:before {
     transform: rotateZ(-2774deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    bottom: 18%;
 }
 .ball[data-spin='3']:before {
     transform: rotateZ(-2850deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 20%;
 }
 .ball[data-spin='4']:before {
     transform: rotateZ(-2793deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    left: 23%;
+    top: 20%;
 }
 .ball[data-spin='5']:before {
     transform: rotateZ(-2642deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 24%;
+
 }
 .ball[data-spin='6']:before {
     transform: rotateZ(-2734deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 26%;
+    bottom:19%;
 }
 .ball[data-spin='7']:before {
     transform: rotateZ(-2526deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='8']:before {
     transform: rotateZ(-2673deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='9']:before {
     transform: rotateZ(-2564deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    right: 17%;
 }
 .ball[data-spin='10']:before {
     transform: rotateZ(-2652deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    right: 20%;
 }
 .ball[data-spin='11']:before {
     transform: rotateZ(-2693deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='12']:before {
     transform: rotateZ(-2868deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='13']:before {
     transform: rotateZ(-2714deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='14']:before {
     transform: rotateZ(-2582deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 23%;
+    bottom: 19%;
 }
 .ball[data-spin='15']:before {
     transform: rotateZ(-2813deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    bottom:17%;
 }
 .ball[data-spin='16']:before {
     transform: rotateZ(-2622deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 25%;
 }
 .ball[data-spin='17']:before {
     transform: rotateZ(-2755deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    left: 25%;
 }
 .ball[data-spin='18']:before {
     transform: rotateZ(-2545deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='19']:before {
     transform: rotateZ(-2803deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    left:23%;
 }
 .ball[data-spin='20']:before {
     transform: rotateZ(-2592deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 24%;
 }
 .ball[data-spin='21']:before {
     transform: rotateZ(-2784deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+     bottom: 18%;
 }
 .ball[data-spin='22']:before {
     transform: rotateZ(-2554deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    bottom: 19%;
 }
 .ball[data-spin='23']:before {
     transform: rotateZ(-2662deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='24']:before {
     transform: rotateZ(-2632deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 24%;
 }
 .ball[data-spin='25']:before {
     transform: rotateZ(-2764deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    left: 25%;
 }
 .ball[data-spin='26']:before {
     transform: rotateZ(-2840deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='27']:before {
     transform: rotateZ(-2724deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='28']:before {
     transform: rotateZ(-2877deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='29']:before {
     transform: rotateZ(-2535deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='30']:before {
     transform: rotateZ(-2684deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='31']:before {
     transform: rotateZ(-2573deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 23%;
 }
 .ball[data-spin='32']:before {
     transform: rotateZ(-2822deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 20%;
+    left: 22%;
 }
 .ball[data-spin='33']:before {
     transform: rotateZ(-2612deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    top: 23%;
 }
 .ball[data-spin='34']:before {
     transform: rotateZ(-2745deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
+    left:24%
 }
 .ball[data-spin='35']:before {
     transform: rotateZ(-2499deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='36']:before {
     transform: rotateZ(-2703deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 .ball[data-spin='0']:before {
     transform: rotateZ(-2831deg);
-    transition: transform 9s ease-out;
+    transition: transform 6s ease-out;
     content: '\2022';
 }
 
