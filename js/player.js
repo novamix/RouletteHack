@@ -4,7 +4,6 @@ class Player {
         this.staked = 0; // cantidad apostada
         this.coin = 1; 
         this.bets = {}; // numeros apostados y cantidad de monedas
-        this.betsAnt = {}
         this.coinsImage = {
             1: '../img/coins/1/flip-v02-512.png',
             5: '../img/coins/5/flip-v02-512.png',
@@ -89,6 +88,11 @@ class Player {
                 number.appendChild(newNumber)
             }
             document.querySelector('.staked').textContent = game.formatter.format(this.staked)
+        } else  {
+            document.querySelector('.noCoinsMessage').style.display = 'block'
+            setTimeout(() => {
+                document.querySelector('.noCoinsMessage').style.display = 'none'
+            }, 1000)
         }
     }
 

@@ -131,7 +131,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-}
+} 
 
 .ball[data-spin='1']:before {
     transform: rotateZ(-2602deg);

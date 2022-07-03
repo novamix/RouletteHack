@@ -15,7 +15,8 @@
    display: flex;
    justify-content: center;
    margin: 20px 0px;
-   padding: 20px 0px
+   padding: 20px 0px;
+   cursor: pointer;
 }
 
 .coin:hover {
@@ -31,7 +32,7 @@
 }
 
 .coin-1 {
-    background: url(../img/coins/1/flip-v02-512.png);
+    background: url(./img/coins/1/flip-v02-512.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -40,7 +41,7 @@
 }
 
 .coin-1:hover {
-    background: url(../img/coins/1/spinLeft-512.gif);
+    background: url(./img/coins/1/spinLeft-512.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -48,7 +49,7 @@
     width: 75px;
 }
 .coin-5 {
-    background: url(../img/coins/5/flip-v02-512.png);
+    background: url(./img/coins/5/flip-v02-512.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -57,7 +58,7 @@
 }
 
 .coin-5:hover {
-    background: url(../img/coins/5/spinLeft-512.gif);
+    background: url(./img/coins/5/spinLeft-512.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -65,7 +66,7 @@
     width: 75px;
 }
 .coin-25 {
-    background: url(../img/coins/25/flip-v02-512.png);
+    background: url(./img/coins/25/flip-v02-512.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -74,7 +75,7 @@
 }
 
 .coin-25:hover {
-    background: url(../img/coins/25/spinLeft-512.gif);
+    background: url(./img/coins/25/spinLeft-512.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -82,7 +83,7 @@
     width: 75px;
 }
 .coin-100 {
-    background: url(../img/coins/100/flip-v02-512.png);
+    background: url(./img/coins/100/flip-v02-512.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -91,7 +92,7 @@
 }
 
 .coin-100:hover {
-    background: url(../img/coins/100/spinLeft-512.gif);
+    background: url(./img/coins/100/spinLeft-512.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -100,7 +101,7 @@
 }
 
 .coin-500 {
-    background: url(../img/coins/500/flip-v02-512.png);
+    background: url(./img/coins/500/flip-v02-512.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
@@ -109,7 +110,7 @@
 }
 
 .coin-500:hover {
-    background: url(../img/coins/500/spinLeft-512.gif);
+    background: url(./img/coins/500/spinLeft-512.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;

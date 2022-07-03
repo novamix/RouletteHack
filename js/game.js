@@ -48,7 +48,6 @@ class Game {
     lauch() {
         setTimeout(() => {
             this.changeText('No More')
-            this.player.betsAnt = this.player.bets
             setTimeout(() => {
                 this.place.style.display = 'none'
             }, 1000)

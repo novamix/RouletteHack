@@ -141,11 +141,12 @@
 .buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: 60px;
 }
 
 .clearBets {
     text-align: right;
-    margin-top: 60px;
+   
     background-color: rgba(107, 107, 107, 0.599);
     
     padding: 8px 20px;
