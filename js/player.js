@@ -5,11 +5,11 @@ class Player {
         this.coin = 1; 
         this.bets = {}; // numeros apostados y cantidad de monedas
         this.coinsImage = {
-            1: '../img/coins/1/flip-v02-512.png',
-            5: '../img/coins/5/flip-v02-512.png',
-            25: '../img/coins/25/flip-v02-512.png',
-            100: '../img/coins/100/flip-v02-512.png',
-            500: '../img/coins/500/flip-v02-512.png',
+            1: './img/coins/1/flip-v02-512.png',
+            5: './img/coins/5/flip-v02-512.png',
+            25: './img/coins/25/flip-v02-512.png',
+            100: './img/coins/100/flip-v02-512.png',
+            500: './img/coins/500/flip-v02-512.png',
         }
     }
   
